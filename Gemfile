@@ -35,6 +35,8 @@ gem 'sdoc', '0.4.1', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '9.0.5'
+  gem 'rspec-rails', '3.4.2'
+  gem 'rspec-its', '1.2.0'
 end
 
 group :development do
@@ -49,3 +51,6 @@ group :production do
   gem 'pg', '0.18.4'
   gem 'rails_12factor', '0.0.3'
 end
+
+gem 'capybara', '2.7.1'
+
