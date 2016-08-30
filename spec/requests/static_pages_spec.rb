@@ -1,51 +1,45 @@
 require 'rails_helper'
 
 describe "StaticPages" do
+  subject { page }
+
   describe "Home page" do
-    it "should have the content 'Cure-EX'" do
-      visit '/static_pages/home'
-      expect(page).to have_content('Cure-EX')
-    end
+    before { visit root_path }
+    it {should have_content('Cure-EX')}
   end
 
   describe "Rules page" do
-    it "should have the content 'Условия'" do
-      visit '/static_pages/rules'
-      expect(page).to have_content('Условия')
-    end
+    before {visit rules_path}
+    it {should have_content ('Условия')}
   end
 
   describe "Fungus page" do
-    it "should have the content 'Грибок'" do
-      visit '/static_pages/fungus'
-      expect(page).to have_content('Грибок')
-    end
+    before {visit fungus_path}
+    it {should have_content ('Грибок')}
   end
 
   describe "Laser page" do
-    it "should have the content 'Лазер'" do
-      visit '/static_pages/laser'
-      expect(page).to have_content('Лазер')
-    end
+    before {visit laser_path}
+    it {should have_content ('Лазер')}
   end
 
   describe "Responses page" do
     it "should have the content 'Отзывы'" do
-      visit '/static_pages/responses'
+      visit responses_path
       expect(page).to have_content('Отзывы')
     end
   end
 
   describe "Contact page" do
     it "should have the content 'Связаться'" do
-      visit '/static_pages/contact'
+      visit contact_path
       expect(page).to have_content('Связаться')
     end
   end
 
   describe "About page" do
     it "should have the content 'Марина'" do
-      visit '/static_pages/about'
+      visit about_path
       expect(page).to have_content('Марина')
     end
   end
