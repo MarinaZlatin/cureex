@@ -14,4 +14,23 @@
     <%= render 'layouts/footer' %>
   </div>
 </body>
+<script>
+  $(document).ready(function() {
+
+    $(".owl-carousel").owlCarousel({
+
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      autoPlay: 4000,
+      singleItem:true
+      // "singleItem:true" is a shortcut for:
+      // items : 1,
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+    });
+  });
+</script>
 </html>
