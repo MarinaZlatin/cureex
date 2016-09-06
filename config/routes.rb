@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'users/new'
+
   root  'static_pages#home'
-  match '/rules', to: 'static_pages#rules', via: 'get'
-  match '/fungus', to: 'static_pages#fungus', via: 'get'
-  match '/laser', to: 'static_pages#laser', via: 'get'
+  match '/rules', to: 'static_pages#rules',     via: 'get'
+  match '/fungus', to: 'static_pages#fungus',   via: 'get'
+  match '/laser', to: 'static_pages#laser',     via: 'get'
   match '/responses', to: 'static_pages#responses', via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
-  match '/about', to: 'static_pages#about', via: 'get'
-
+  match '/about', to: 'static_pages#about',     via: 'get'
+  match '/signup', to: 'users#new',             via: 'get'
 
 #  get 'static_pages/home'
 #  get 'static_pages/about'
