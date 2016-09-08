@@ -5,7 +5,7 @@ describe "StaticPages" do
 
   describe "Home page" do
     before { visit root_path }
-    it {should have_content('Cure-EX')}
+    it {should_not have_content('Cure-EX')}
   end
 
   describe "Rules page" do

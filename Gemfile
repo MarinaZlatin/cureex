@@ -4,6 +4,10 @@ ruby '2.2.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 gem 'bootstrap-sass', '3.3.6'
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~>3.1.11'
+gem 'bcrypt-ruby', '~>3.1.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '1.3.11'
 # Use SCSS for stylesheets
@@ -27,8 +31,7 @@ gem 'jbuilder', '2.6.0'
 gem 'sdoc', '0.4.1', group: :doc
 gem 'owlcarousel-rails', '1.1.3.3'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+
 
 # Use Unicorn as the app server
 # gem 'unicorn'
