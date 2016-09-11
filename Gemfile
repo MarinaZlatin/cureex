@@ -17,9 +17,7 @@ gem 'uglifier', '3.0.2'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '4.1.1'
 gem 'coffee-script-source', '1.8.0'
-
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'capybara', '2.7.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '4.2.1'
@@ -30,7 +28,6 @@ gem 'jbuilder', '2.6.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '0.4.1', group: :doc
 gem 'owlcarousel-rails', '1.1.3.3'
-
 
 
 # Use Unicorn as the app server
@@ -44,6 +41,7 @@ group :development, :test do
   gem 'byebug', '9.0.5'
   gem 'rspec-rails', '3.4.2'
   gem 'rspec-its', '1.2.0'
+  gem 'factory_girl_rails', '4.7.0'
 end
 
 group :development do
@@ -59,5 +57,5 @@ group :production do
   gem 'rails_12factor', '0.0.3'
 end
 
-gem 'capybara', '2.7.1'
+
 
