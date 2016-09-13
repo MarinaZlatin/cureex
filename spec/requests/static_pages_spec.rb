@@ -33,7 +33,7 @@ describe "StaticPages" do
   describe "Contact page" do
     it "should have the content 'Связаться'" do
       visit contact_path
-      expect(page).to have_content('Связаться')
+      expect(page).to have_content('Обратная связь')
     end
   end
 
