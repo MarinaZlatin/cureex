@@ -28,6 +28,9 @@ gem 'jbuilder', '2.6.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '0.4.1', group: :doc
 gem 'owlcarousel-rails', '1.1.3.3'
+gem 'faker', '1.6.5'
+gem 'will_paginate', '3.1.0'
+gem 'bootstrap-will_paginate', '0.0.10'
 
 
 # Use Unicorn as the app server
